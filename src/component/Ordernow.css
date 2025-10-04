@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pizza-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .pizza-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .pizza-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .pizza-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .pizza-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #777;
+  }
+
+  .pizza-card button {
+    margin: 15px 0 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .pizza-card button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .pizza-card button:active {
+    transform: scale(1);
+  }
+  

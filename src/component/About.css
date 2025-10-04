@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #17122a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-section {
+    margin-bottom: 30px;
+}
+.about-section p {
+    line-height: 1.8;
+}
+.mission-section, .team-section {
+    margin-top: 40px;
+}
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.team-member {
+    text-align: center;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

@@ -1,0 +1,30 @@
+
+body{
+  background-color: white;
+}
+.Home-page{
+  background-position: center;
+  width: 80%;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgba(62, 74, 95, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  margin-top: 10px;
+}
+.backimage{
+  background-image:url(../../public/bg_3.jpg) ;
+  height: 80vh;
+  width: 125%;
+}
+.main-container{
+  background-color: white;
+}
+.main-container img{
+  height: 60vh;
+  width: auto;
+  justify-content: center;
+  margin-left: 400px;
+  background-color:white ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
