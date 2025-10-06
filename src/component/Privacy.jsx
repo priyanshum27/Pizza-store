@@ -1,10 +1,9 @@
-import React from 'react';
 import './Privacy.css';
 
 const Privacy = () => {
   return (
     <>
-       <div class="container">
+       <div className="container">
         <h1>Privacy Policy</h1>
 
         <p>This Privacy Policy describes how we collect, use, and protect your information when you visit our website or use our services. By using our site, you agree to the collection and use of information in accordance with this policy.</p>

@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';  // Fix the imports
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './component/Navbar1.jsx';
 import './App.css';
 import Home from './component/Home.jsx';
@@ -27,7 +26,7 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/store" element={<OrderComponent />}  />
+            <Route path="/ordernow" element={<OrderComponent />} />
             <Route path="/order/:id" element={<Order />} />
           </Routes>
         </div>
