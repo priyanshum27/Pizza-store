@@ -1,10 +1,44 @@
-/* Modern App Styles */
+/* Modern App Styles with Design System */
+:root {
+  /* Pizza-themed Color Palette */
+  --primary-orange: #ff6b35;
+  --secondary-orange: #f7931e;
+  --warm-red: #e74c3c;
+  --warm-yellow: #f39c12;
+  --cream-white: #fef9f7;
+  --warm-gray: #8b7355;
+  --dark-brown: #3c2415;
+  --light-gray: #f5f5f5;
+  
+  /* Spacing System */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
 .modern-app {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 25%, #dee2e6 50%, #ced4da 75%, #adb5bd 100%);
+  background: linear-gradient(135deg, var(--cream-white) 0%, #f8f9fa 25%, #e9ecef 50%, #dee2e6 75%, #ced4da 100%);
   background-size: 400% 400%;
   animation: gradientShift 20s ease infinite;
   margin: 0;
