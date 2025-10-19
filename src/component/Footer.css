@@ -1,0 +1,270 @@
+/* Footer Styles */
+.footer {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(173, 181, 189, 0.3);
+  margin-top: 80px;
+}
+
+.footer-content {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer Top */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 60px 0 40px;
+}
+
+.footer-section h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #495057;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #6c757d, #495057);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Logo Section */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo-icon {
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+.footer-logo .logo-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #495057;
+  margin: 0;
+}
+
+.footer-logo .logo-text p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.footer-description {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-link.facebook:hover {
+  background: #3b5998;
+  color: white;
+}
+
+.social-link.instagram:hover {
+  background: #e4405f;
+  color: white;
+}
+
+.social-link.twitter:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.social-link.whatsapp:hover {
+  background: #25d366;
+  color: white;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 5px 0;
+}
+
+.footer-links a:hover {
+  color: #495057;
+  padding-left: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(173, 181, 189, 0.3);
+  padding: 25px 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-bottom-links a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #495057;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 0 30px;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 0 15px;
+  }
+
+  .footer-top {
+    padding: 30px 0 20px;
+  }
+
+  .footer-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo .logo-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-description {
+    font-size: 0.95rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

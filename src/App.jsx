@@ -13,6 +13,7 @@ import Order from './component/Order.jsx';
 import OrderComponent from './component/Ordernow.jsx';
 import ModernMenu from './component/ModernMenu.jsx';
 import ModernHero from './component/ModernHero.jsx';
+
 const App = () => {
   return (
     <BrowserRouter>
