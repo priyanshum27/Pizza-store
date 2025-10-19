@@ -5,71 +5,181 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #140d34;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../public/bg_3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-rows: repeat(3 1fr );
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .pizza {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-
-.pizza-card:hover {
-  transform: translateY(-5px);
-}
-
-.pizza-card img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: stretch;
   width: 100%;
-  border-radius: 8px;
-  height: 200px;
-  object-fit: cover;
+  padding: 0;
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.pizza-card h2 {
-  font-size: 1.4rem;
-  margin: 15px 0;
-  color: #333;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.pizza-card p {
-  color: #777;
-  margin-bottom: 10px;
+/* Featured Section Styles */
+.featured-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-.pizza-card .price {
-  font-weight: bold;
-  color: #e74c3c;
-  margin-bottom: 10px;
-}
-
-.pizza-card .rating {
-  background-color: #f39c12;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: inline-block;
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .featured-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+  }
+  
+  .pizza {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .pizza-card {
-    width: 45%; 
+  .featured-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .pizza {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .grid-container {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .pizza {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 480px) {
-  .pizza-card {
-    width: 100%;
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .grid-container {
+    padding: 20px 10px;
+    margin: 0 10px;
+  }
+  
+  .pizza {
+    gap: 15px;
   }
 }

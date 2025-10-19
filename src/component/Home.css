@@ -1,30 +1,73 @@
 
-body{
-  background-color: white;
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.Home-page{
+
+.Home-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.backimage {
+  background-image: url(../../public/bg_3.jpg);
+  background-size: cover;
   background-position: center;
-  width: 80%;
-  justify-content: center;
-  justify-items: center;
-  background-color: rgba(62, 74, 95, 0.75);
-  backdrop-filter: blur(19px) saturate(180%);
-  margin-top: 10px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
-.backimage{
-  background-image:url(../../public/bg_3.jpg) ;
-  height: 80vh;
-  width: 125%;
+
+.main-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 60px 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
-.main-container{
-  background-color: white;
-}
-.main-container img{
-  height: 60vh;
+
+.main-container img {
+  height: 300px;
   width: auto;
-  justify-content: center;
-  margin-left: 400px;
-  background-color:white ;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.main-container img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 40px 15px;
+    margin: 20px 10px;
+  }
+  
+  .main-container img {
+    height: 250px;
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 30px 10px;
+    margin: 10px 5px;
+  }
+  
+  .main-container img {
+    height: 200px;
+    margin: 10px auto;
+  }
 }
