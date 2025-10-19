@@ -13,6 +13,7 @@ import Order from './component/Order.jsx';
 import OrderComponent from './component/Ordernow.jsx';
 import ModernMenu from './component/ModernMenu.jsx';
 import ModernHero from './component/ModernHero.jsx';
+import LandingPage from './component/LandingPage.jsx';
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,7 +21,8 @@ const App = () => {
         <ModernHeader />
         <main className='main-content'>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/store" element={<Store />} />
