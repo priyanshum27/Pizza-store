@@ -10,6 +10,9 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .modern-product-card:hover {

@@ -7,8 +7,6 @@
   animation: gradientShift 15s ease infinite;
   padding: 0;
   margin: 0;
-  padding-top: 0px;
-  margin-top: 0px;
 }
 
 @keyframes gradientShift {
@@ -287,6 +285,7 @@
   padding: 0 20px;
   width: 100%;
   max-width: 100%;
+  justify-items: center;
 }
 
 /* No Results */
