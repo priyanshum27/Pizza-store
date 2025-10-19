@@ -1,4 +1,6 @@
 import React from 'react';
+import Testimonials from './Testimonials.jsx';
+import Footer from './Footer.jsx';
 import './NewLanding.css';
 
 const NewLanding = () => {
@@ -100,6 +102,9 @@ const NewLanding = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <Testimonials />
+
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
@@ -113,6 +118,9 @@ const NewLanding = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
