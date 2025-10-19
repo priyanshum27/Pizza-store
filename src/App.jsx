@@ -13,7 +13,6 @@ import Order from './component/Order.jsx';
 import OrderComponent from './component/Ordernow.jsx';
 import ModernMenu from './component/ModernMenu.jsx';
 import ModernHero from './component/ModernHero.jsx';
-import NewLanding from './component/NewLanding.jsx';
 
 const App = () => {
   return (
@@ -22,8 +21,7 @@ const App = () => {
         <ModernHeader />
         <main className='main-content'>
           <Routes>
-            <Route path="/" element={<NewLanding />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/store" element={<Store />} />
