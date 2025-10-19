@@ -1,12 +1,11 @@
 /* Modern Product Card Styles */
 .modern-product-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   position: relative;
   height: fit-content;
   display: flex;
@@ -14,8 +13,9 @@
 }
 
 .modern-product-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-color: #fc8019;
 }
 
 /* Card Badges */
@@ -65,7 +65,7 @@
 /* Product Image */
 .product-image-container {
   position: relative;
-  height: 160px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -116,7 +116,7 @@
 
 /* Product Info */
 .product-info {
-  padding: 25px;
+  padding: 16px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -127,9 +127,9 @@
 }
 
 .product-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #282c3f;
   margin: 0 0 8px 0;
   line-height: 1.3;
 }
@@ -253,9 +253,9 @@
 }
 
 .price {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #ff6b35;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #282c3f;
 }
 
 .price-label {
@@ -370,11 +370,11 @@
   }
 
   .product-image-container {
-    height: 140px;
+    height: 160px;
   }
 
   .product-info {
-    padding: 20px;
+    padding: 14px;
   }
 
   .product-title {
@@ -406,11 +406,11 @@
 
 @media (max-width: 480px) {
   .product-image-container {
-    height: 120px;
+    height: 140px;
   }
 
   .product-info {
-    padding: 15px;
+    padding: 12px;
   }
 
   .product-title {
