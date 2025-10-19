@@ -63,7 +63,7 @@
 /* Product Image */
 .product-image-container {
   position: relative;
-  height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -368,7 +368,7 @@
   }
 
   .product-image-container {
-    height: 200px;
+    height: 160px;
   }
 
   .product-info {
@@ -404,7 +404,7 @@
 
 @media (max-width: 480px) {
   .product-image-container {
-    height: 180px;
+    height: 140px;
   }
 
   .product-info {
