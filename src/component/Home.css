@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 /* Hero Image Section */
