@@ -16,13 +16,13 @@ const ModernHero = () => {
           </h1>
           <p className="hero-subtitle">
             Experience the taste of Italy with our handcrafted pizzas, made with the finest ingredients 
-            and traditional recipes passed down through generations.
+            and traditional recipes passed down through generations. From our wood-fired ovens to your table.
           </p>
           
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">30+</span>
-              <span className="stat-label">Pizza Varieties</span>
+              <span className="stat-number">34+</span>
+              <span className="stat-label">Delicious Items</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">4.8</span>
@@ -31,6 +31,29 @@ const ModernHero = () => {
             <div className="stat-item">
               <span className="stat-number">15-20</span>
               <span className="stat-label">Min Delivery</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">1000+</span>
+              <span className="stat-label">Happy Customers</span>
+            </div>
+          </div>
+
+          <div className="hero-features">
+            <div className="feature-item">
+              <span className="feature-icon">🔥</span>
+              <span className="feature-text">Wood-Fired Ovens</span>
+            </div>
+            <div className="feature-item">
+              <span className="feature-icon">🌿</span>
+              <span className="feature-text">Fresh Ingredients</span>
+            </div>
+            <div className="feature-item">
+              <span className="feature-icon">🚚</span>
+              <span className="feature-text">Fast Delivery</span>
+            </div>
+            <div className="feature-item">
+              <span className="feature-icon">⭐</span>
+              <span className="feature-text">Premium Quality</span>
             </div>
           </div>
 
@@ -43,6 +66,10 @@ const ModernHero = () => {
               <span>View Menu</span>
               <span className="btn-icon">📋</span>
             </button>
+            <button className="btn-tertiary">
+              <span>Build Custom Pizza</span>
+              <span className="btn-icon">🛠️</span>
+            </button>
           </div>
         </div>
 
@@ -53,6 +80,7 @@ const ModernHero = () => {
               <div className="pizza-info">
                 <h3>Pepperoni Supreme</h3>
                 <p>₹450</p>
+                <div className="pizza-badge">🔥 Popular</div>
               </div>
             </div>
             <div className="pizza-card floating delay-1">
@@ -60,6 +88,7 @@ const ModernHero = () => {
               <div className="pizza-info">
                 <h3>Margherita</h3>
                 <p>₹380</p>
+                <div className="pizza-badge">⭐ Classic</div>
               </div>
             </div>
             <div className="pizza-card floating delay-2">
@@ -67,6 +96,15 @@ const ModernHero = () => {
               <div className="pizza-info">
                 <h3>Garden Fresh</h3>
                 <p>₹420</p>
+                <div className="pizza-badge">🌿 Healthy</div>
+              </div>
+            </div>
+            <div className="pizza-card floating delay-3">
+              <img src="/public/pizza-4.jpg" alt="Meat Lovers" />
+              <div className="pizza-info">
+                <h3>Meat Lovers</h3>
+                <p>₹520</p>
+                <div className="pizza-badge">🥩 Premium</div>
               </div>
             </div>
           </div>
@@ -80,6 +118,17 @@ const ModernHero = () => {
         <div className="floating-element element-3">🧀</div>
         <div className="floating-element element-4">🌿</div>
         <div className="floating-element element-5">🍄</div>
+        <div className="floating-element element-6">🥓</div>
+        <div className="floating-element element-7">🫒</div>
+        <div className="floating-element element-8">🌶️</div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="scroll-indicator">
+        <div className="scroll-arrow">
+          <span>↓</span>
+          <span>Scroll to explore</span>
+        </div>
       </div>
     </section>
   );
