@@ -25,6 +25,9 @@ const ModernHeader = () => {
         {/* Navigation Menu */}
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <NavLink to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+            Landing
+          </NavLink>
+          <NavLink to="/home" className="nav-link" onClick={() => setIsMenuOpen(false)}>
             Home
           </NavLink>
           <NavLink to="/menu" className="nav-link" onClick={() => setIsMenuOpen(false)}>
@@ -72,6 +75,9 @@ const ModernHeader = () => {
         <div className="mobile-menu-overlay" onClick={() => setIsMenuOpen(false)}>
           <div className="mobile-menu" onClick={(e) => e.stopPropagation()}>
             <NavLink to="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
+              Landing
+            </NavLink>
+            <NavLink to="/home" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
               Home
             </NavLink>
             <NavLink to="/menu" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
