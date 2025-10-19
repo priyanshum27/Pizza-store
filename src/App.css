@@ -1,14 +1,26 @@
 /* Modern App Styles */
 .modern-app {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .main-content {
   flex: 1;
   width: 100%;
+  padding-top: 80px; /* Add padding for fixed navbar */
 }
 
 /* Global Styles */
@@ -20,13 +32,21 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /* Utility Classes */
