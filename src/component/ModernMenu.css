@@ -2,14 +2,13 @@
 .modern-menu {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background: white;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
 }
 
 @keyframes gradientShift {
