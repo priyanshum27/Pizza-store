@@ -30,6 +30,8 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .hero-image-container {

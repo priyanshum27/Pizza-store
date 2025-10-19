@@ -20,7 +20,8 @@
 .main-content {
   flex: 1;
   width: 100%;
-  padding-top: 80px; /* Add padding for fixed navbar */
+  padding-top: 0px; /* Remove padding for navbar */
+  margin-top: 0px;
 }
 
 /* Global Styles */

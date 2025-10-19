@@ -2,6 +2,8 @@
 .about-page {
   width: 100%;
   min-height: 100vh;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 /* Hero Section */
