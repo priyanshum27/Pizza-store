@@ -9,6 +9,29 @@ import './Store.css';
 const Home = () => {
   return (
     <div className="home-page">
+      {/* Hero Image Section */}
+      <section className="hero-image-section">
+        <div className="hero-image-container">
+          <img src="/public/bg_3.jpg" alt="Pizza Palace Restaurant" className="hero-main-image" />
+          <div className="hero-overlay">
+            <div className="hero-text-content">
+              <h1 className="hero-main-title">Welcome to Pizza Palace</h1>
+              <p className="hero-main-subtitle">Authentic Italian Cuisine • Fresh Ingredients • Made with Love</p>
+              <div className="hero-main-actions">
+                <button className="hero-btn-primary">
+                  <span>Order Now</span>
+                  <span className="btn-icon">🍕</span>
+                </button>
+                <button className="hero-btn-secondary">
+                  <span>View Menu</span>
+                  <span className="btn-icon">📋</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="landing-hero">
         <div className="hero-content">
