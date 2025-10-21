@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { DarkModeProvider } from './context/DarkModeContext';
 import ModernHeader from './component/ModernHeader.jsx';
 import './App.css';
 import './component/Alignment.css';
@@ -16,25 +17,27 @@ import ModernHero from './component/ModernHero.jsx';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='modern-app'>
-        <ModernHeader />
-        <main className='main-content'>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/store" element={<Store />} />
-            <Route path="/menu" element={<ModernMenu />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/ordernow" element={<OrderComponent />} />
-            <Route path="/order/:id" element={<Order />} />
-          </Routes>
-        </main>
-      </div>
-    </BrowserRouter>
+    <DarkModeProvider>
+      <BrowserRouter>
+        <div className='modern-app'>
+          <ModernHeader />
+          <main className='main-content'>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/store" element={<Store />} />
+              <Route path="/menu" element={<ModernMenu />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/ordernow" element={<OrderComponent />} />
+              <Route path="/order/:id" element={<Order />} />
+            </Routes>
+          </main>
+        </div>
+      </BrowserRouter>
+    </DarkModeProvider>
   );
 };
 

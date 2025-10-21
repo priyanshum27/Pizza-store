@@ -13,9 +13,7 @@ function ModernProductCard({
   prepTime, 
   spiceLevel, 
   calories, 
-  subcategory,
-  popular,
-  new: isNew 
+  subcategory
 }) {
   const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
@@ -51,12 +49,6 @@ function ModernProductCard({
 
   return (
     <div className="modern-product-card">
-      {/* Badges */}
-      <div className="card-badges">
-        {popular && <span className="badge popular">🔥 Popular</span>}
-        {isNew && <span className="badge new">✨ New</span>}
-      </div>
-
       {/* Product Image */}
       <div className="product-image-container">
         <img src={img} alt={title} className="product-image" />

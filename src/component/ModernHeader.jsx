@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import DarkModeToggle from './DarkModeToggle';
 import './ModernHeader.css';
 
 const ModernHeader = () => {
@@ -40,6 +41,8 @@ const ModernHeader = () => {
 
         {/* Action Buttons */}
         <div className="header-actions">
+          <DarkModeToggle />
+          
           <button className="search-btn">
             <span className="search-icon">🔍</span>
           </button>
