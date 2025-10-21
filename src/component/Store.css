@@ -6,9 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background: white;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -110,12 +108,38 @@ body {
 /* Featured Section Styles */
 .featured-section {
   padding: var(--space-4xl) 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
   width: 100%;
   max-width: 100%;
+  margin-top: 0; /* Remove extra margin since main-content has padding */
+  position: relative;
+  z-index: 10;
+  animation: sectionFloat 10s ease-in-out infinite;
+}
+
+.dark-mode .featured-section {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.1), rgba(45, 45, 45, 0.05));
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  animation: darkSectionFloat 12s ease-in-out infinite;
+}
+
+@keyframes darkSectionFloat {
+  0%, 100% { 
+    transform: translateY(0px);
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.1), rgba(45, 45, 45, 0.05));
+  }
+  50% { 
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(102, 126, 234, 0.03));
+  }
+}
+
+@keyframes sectionFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
 }
 
 .featured-grid {
@@ -174,6 +198,10 @@ body {
   .grid-container {
     padding: var(--space-xl) var(--space-md);
   }
+  
+  .featured-section {
+    margin-top: 0; /* Remove margin since main-content has padding */
+  }
 }
 
 @media (max-width: 600px) {
@@ -188,6 +216,10 @@ body {
     gap: var(--space-sm);
     max-width: 400px;
     margin: 0 auto;
+  }
+  
+  .featured-section {
+    margin-top: 0; /* Remove margin since main-content has padding */
   }
 }
 

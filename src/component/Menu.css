@@ -1,11 +1,13 @@
 .menu-container {
-  max-width: 1400px;
+  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
   background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: none;
   animation: fadeInUp 0.8s ease-out;
+  margin-top: 0; /* Remove margin since main-content has padding */
 }
 
 @keyframes fadeInUp {
@@ -133,6 +135,7 @@
   justify-items: center;
   align-items: stretch;
   width: 100%;
+  max-width: 100%;
   padding: 0;
   animation: fadeInUp 1s ease-out 0.4s both;
 }
@@ -218,14 +221,23 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
   }
+  
+  .menu-container {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 600px) {
   .menu-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-    max-width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .menu-container {
+    margin-top: 50px;
   }
   
   .category-filters {
@@ -243,6 +255,7 @@
 @media (max-width: 480px) {
   .menu-container {
     padding: 20px 10px;
+    margin-top: 40px;
   }
   
   .menu-header h1 {
